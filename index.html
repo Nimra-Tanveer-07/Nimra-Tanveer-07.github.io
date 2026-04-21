@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Nimra Tanveer | Software QA Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Custom Glowing Utilities */
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(29, 185, 84, 0.4);
+        }
+        .neon-text {
+            text-shadow: 0 0 8px rgba(0, 255, 156, 0.5);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Smooth transition for hover */
+        .hover-lift {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(29, 185, 84, 0.2);
+        }
+    </style>
 </head>
-<body>
-    <p>Hello, this is my very first website page Online, heheh</p>
+<body class="bg-[#0a0a0a] text-white selection:bg-[#1db954] selection:text-white">
+
+    <div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#0f2f1f] rounded-full blur-[120px] opacity-30"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#1db954] rounded-full blur-[150px] opacity-10"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 px-6 py-6 flex justify-between items-center bg-[#0a0a0a]/80 backdrop-blur-md">
+        <div class="text-xl font-bold tracking-tighter">NT<span class="text-[#1db954]">.</span></div>
+        <div class="space-x-8 text-sm font-medium text-gray-400">
+            <a href="#about" class="hover:text-[#1db954] transition-colors">About</a>
+            <a href="#skills" class="hover:text-[#1db954] transition-colors">Skills</a>
+            <a href="#projects" class="hover:text-[#1db954] transition-colors">Projects</a>
+            <a href="#contact" class="px-4 py-2 border border-[#1db954] rounded-full text-[#1db954] hover:bg-[#1db954] hover:text-black transition-all">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="text-center">
+            <h2 class="text-[#1db954] font-medium tracking-widest uppercase mb-4">Hello, I'm</h2>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6">Nimra Tanveer</h1>
+            <p class="text-gray-400 text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Software QA Engineer. <span class="text-white">Ensuring quality, reliability, and seamless user experiences.</span></p>
+            <a href="#projects" class="inline-block px-8 py-4 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow">
+                View Projects
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="glass-panel p-10 rounded-3xl">
+            <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                As a detail-oriented Software QA Engineer, I bridge the gap between development and end-user satisfaction. My passion lies in creating robust testing frameworks, uncovering critical bugs before they reach production, and ensuring that every pixel and logic flow meets the highest standards of quality. I am currently focused on transitioning into automated testing environments to streamline delivery pipelines.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Technical Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
+                <h3 class="text-[#1db954] font-semibold mb-2">Manual Testing</h3>
+                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
+                    <div class="bg-[#1db954] h-2 rounded-full w-[95%]"></div>
+                </div>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
+                <h3 class="text-[#1db954] font-semibold mb-2">Test Case Design</h3>
+                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
+                    <div class="bg-[#1db954] h-2 rounded-full w-[90%]"></div>
+                </div>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
+                <h3 class="text-[#1db954] font-semibold mb-2">Bug Tracking</h3>
+                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
+                    <div class="bg-[#1db954] h-2 rounded-full w-[100%]"></div>
+                </div>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
+                <h3 class="text-[#1db954] font-semibold mb-2">Automation</h3>
+                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
+                    <div class="bg-[#1db954] h-2 rounded-full w-[70%]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-panel p-6 rounded-3xl hover-lift">
+                <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center">
+                    <span class="text-[#1db954] text-4xl">💻</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">CaseFlow SaaS</h3>
+                <p class="text-gray-400 mb-4 text-sm">Enterprise-grade test case management system with real-time analytics.</p>
+                <div class="flex gap-2 mb-6">
+                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">React</span>
+                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Python</span>
+                </div>
+                <button class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black hover:border-transparent transition-all">View Details</button>
+            </div>
+            <div class="glass-panel p-6 rounded-3xl hover-lift">
+                <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center">
+                    <span class="text-[#1db954] text-4xl">📱</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Skillcy App</h3>
+                <p class="text-gray-400 mb-4 text-sm">Student-focused skill development roadmap and UI/UX design.</p>
+                <div class="flex gap-2 mb-6">
+                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">UI/UX</span>
+                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Figma</span>
+                </div>
+                <button class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black hover:border-transparent transition-all">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 max-w-xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+        <form class="space-y-4">
+            <input type="text" placeholder="Name" class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
+            <input type="email" placeholder="Email" class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
+            <textarea placeholder="Message" rows="4" class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all"></textarea>
+            <button class="w-full py-4 bg-[#1db954] text-black font-bold rounded-xl hover:bg-white transition-all shadow-[0_0_15px_rgba(29,185,84,0.3)]">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm border-t border-gray-900">
+        © 2026 Nimra Tanveer. Built with precision.
+    </footer>
+
 </body>
 </html>
