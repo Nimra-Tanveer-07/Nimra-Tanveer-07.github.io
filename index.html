@@ -12,6 +12,37 @@
 
 <body class="bg-[#0a0a0a] text-white selection:bg-[#1db954] selection:text-white">
 
+    <!-- BLOG POPUP OVERLAY -->
+    <div id="blogPopup" class="fixed inset-0 z-[9999] hidden flex items-center justify-center">
+
+        <!-- BLURRED BACKGROUND LAYER -->
+        <div class="absolute inset-0 backdrop-blur-xl bg-black/30"></div>
+
+        <!-- MODAL BOX -->
+        <div
+            class="relative  premium-btn overflow-hidden glass-panel p-10 rounded-3xl bg-[#161616]/60 backdrop-blur-xl border border-gray-700 rounded-2xl p-8 max-w-md text-center shadow-2xl">
+
+
+            <h2 class="text-2xl font-bold mb-3 text-white">
+                Blogs Are Coming Soon!
+            </h2>
+
+            <p class="text-gray-400 mb-6">
+                Stay Connected — Stay Tuned
+            </p>
+
+            <button onclick="closePopup()"
+                class="px-5 py-2 bg-[#1db954] text-black font-semibold rounded-full hover:bg-white transition">
+                Got It
+            </button>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
     <div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
         <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#0f2f1f] rounded-full blur-[120px] opacity-30">
         </div>
@@ -174,7 +205,8 @@
 
                     <!-- 1/4 Blog Button -->
                     <div class="w-1/4 flex justify-end">
-                        <a href="#" class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
+                        <a href="javascript:void(0)" onclick="openPopup()"
+                            class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
                             <span class="text-sm">Blog</span>
                         </a>
                     </div>
@@ -189,8 +221,8 @@
                 </p>
 
             </div>
-            
-            
+
+
             <!-- COURSE 2 -->
             <div
                 class="premium-btn glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all hover:scale-[1.02]">
@@ -203,7 +235,8 @@
 
                     <!-- 1/4 Blog Button -->
                     <div class="w-1/4 flex justify-end">
-                        <a href="#" class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
+                        <a href="javascript:void(0)" onclick="openPopup()"
+                            class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
                             <span class="text-sm">Blog</span>
                         </a>
                     </div>
@@ -231,7 +264,8 @@
 
                     <!-- 1/4 Blog Button -->
                     <div class="w-1/4 flex justify-end">
-                        <a href="#" class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
+                        <a href="javascript:void(0)" onclick="openPopup()"
+                            class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
                             <span class="text-sm">Blog</span>
                         </a>
                     </div>
@@ -260,7 +294,8 @@
 
                     <!-- 1/4 Blog Button -->
                     <div class="w-1/4 flex justify-end">
-                        <a href="#" class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
+                        <a href="javascript:void(0)" onclick="openPopup()"
+                            class="premium-btn blog-btn primary px-4 py-2 flex items-center gap-2">
                             <span class="text-sm">Blog</span>
                         </a>
                     </div>
@@ -281,50 +316,83 @@
     </section>
 
     <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center">Technical Expertise</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Python Django</h3>
-                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
-                    <div class="bg-[#1db954] h-2 rounded-full w-[95%]"></div>
-                </div>
-            </div>
-            <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Test Cases</h3>
-                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
-                    <div class="bg-[#1db954] h-2 rounded-full w-[90%]"></div>
-                </div>
-            </div>
-            <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Bug Tracking</h3>
-                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
-                    <div class="bg-[#1db954] h-2 rounded-full w-[100%]"></div>
-                </div>
-            </div>
-            <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Manual Testing</h3>
-                <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
-                    <div class="bg-[#1db954] h-2 rounded-full w-[70%]"></div>
-                </div>
-            </div>
-            <div id="10-more"
-                class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2 text-center p-5">+10 More</h3>
 
-            </div>
+        <h2 class="text-3xl font-bold mb-10 text-center text-white">
+            Technical Expertise
+        </h2>
+
+        <div class="flex flex-wrap gap-2 justify-center">
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Python Django
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Manual Testing
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Test Cases
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Bug Tracking
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                QA Testing
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Project Management
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Automation Testing
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Git & GitHub
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                REST APIs
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                SQL / Databases
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                UI Testing
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Agile / Scrum
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                Debugging
+            </span>
+
+            <span class="px-3 py-1 text-sm bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap">
+                SDLC
+            </span>
+
+            <!-- +10 More chip -->
+            <span
+                class="px-3 py-1 text-sm bg-black border border-[#1db954] text-[#1db954] rounded-full whitespace-nowrap">
+                +10 More
+            </span>
+
         </div>
-        <div class="text-center mt-8">
-            <a href="#skills"
-                class="inline-block px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow">
-                View All Skills
-            </a>
-        </div>
+
     </section>
 
     <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
 
-        <div class="relative group">
+        <div class=" flex flex-col relative group">
 
             <!-- SLIDER -->
             <div id="projectSlider" class="flex flex-row gap-6 overflow-x-auto scroll-smooth py-4 no-scrollbar">
@@ -356,10 +424,6 @@
                             +4 More
                         </span>
                     </div>
-
-                    <button class="premium-btn primary w-full py-2 border  transition-all">
-                        View Details
-                    </button>
                 </div>
                 <!-- CARD 2 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
@@ -390,9 +454,6 @@
                         </span>
                     </div>
 
-                    <button class="premium-btn primary w-full py-2 border  transition-all">
-                        View Details
-                    </button>
                 </div>
 
 
@@ -456,9 +517,6 @@
                         </span>
                     </div>
 
-                    <button class="premium-btn primary w-full py-2 border  transition-all">
-                        View Details
-                    </button>
                 </div>
 
                 <!-- CARD 5 -->
@@ -491,18 +549,15 @@
                         </span>
                     </div>
 
-                    <button class="premium-btn primary w-full py-2 border  transition-all">
-                        View Details
-                    </button>
                 </div>
 
 
-            </div>
 
-            <div class="text-center mt-8">
-                <a href="#projects"
-                    class="inline-block px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow">
-                    View All Projects
+            </div>
+            <div class="justify-center text-center">
+                <a href="#contact"
+                    class="inline-block px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow mt-6">
+                    Contact for Details
                 </a>
             </div>
 
@@ -522,24 +577,100 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 max-w-xl mx-auto w-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
-        <form class="space-y-4">
-            <input type="text" placeholder="Name"
-                class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
-            <input type="email" placeholder="Email"
-                class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
-            <textarea placeholder="Message" rows="4"
-                class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all"></textarea>
-            <button
-                class="w-full py-4 bg-[#1db954] text-black font-bold rounded-xl hover:bg-white transition-all shadow-[0_0_15px_rgba(29,185,84,0.3)]">Send
-                Message</button>
-        </form>
+    <section id="contact" class="py-20 px-6 max-w-6xl mx-auto">
+
+        <h2 class="text-3xl font-bold mb-12 text-center text-white">
+            Get In Touch
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- LEFT: Interactive Image / Icon -->
+            <div class="flex justify-center items-center relative">
+
+                <!-- IMAGE WRAPPER -->
+                <div class="relative max-w-sm w-full overflow-hidden rounded-xl">
+
+                    <!-- IMAGE -->
+                    <img src="form.png" alt="Contact Illustration" class="w-full h-full object-cover">
+
+                    <!-- TOP FADE -->
+                    <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#0a0a0a] to-transparent"></div>
+
+                    <!-- BOTTOM FADE -->
+                    <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#0a0a0a] to-transparent">
+                    </div>
+
+                    <!-- LEFT FADE -->
+                    <div class="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-[#0a0a0a] to-transparent"></div>
+
+                    <!-- RIGHT FADE -->
+                    <div class="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-[#0a0a0a] to-transparent">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT: Form -->
+            <div class="flex justify-center items-center">
+                <form class="space-y-4">
+
+                    <input type="text" placeholder="Name required" required
+                        class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
+
+                    <input type="email" placeholder="Email" required
+                        class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
+
+                    <textarea placeholder="Message" rows="4" required
+                        class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all"></textarea>
+
+                    <button class="premium-btn primary w-full py-2 border transition-all">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
         <div id="message"></div>
+
     </section>
 
     <footer class="py-10 text-center text-gray-500 text-sm border-t border-gray-900">
-        © 2026 Nimra Tanveer. Built with precision.
+        <div class="flex flex-row justify-center items-center gap-4 mb-4">
+            <div>
+            © 2026 Nimra Tanveer. Built with precision.
+        </div>
+        <!-- ICON LINKS -->
+        <div class="flex justify-center items-center gap-6 mb-4">
+
+            <!-- GitHub -->
+            <a href="https://github.com/Nimra-Tanveer-07" target="_blank" class="hover:text-[#1db954] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 .5C5.7.5.8 5.4.8 11.8c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.1 2.8 2.1 1.4 0 2.3-1.1 2.6-1.6.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.7 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0C18.1 4.5 19.1 4.8 19.1 4.8c.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.4-2.8 5.4-5.4 5.7.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.2 5.4 18.3.5 12 .5z" />
+                </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/nimra-tanveer-66194028a/" target="_blank" class="hover:text-[#1db954] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.33V9h3.42v1.56h.05c.48-.9 1.65-1.86 3.4-1.86 3.63 0 4.3 2.39 4.3 5.5v6.25zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
+                </svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:nimratanveer077@gmail.com" class="hover:text-[#1db954] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 13.065 0 6.5V18a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6.5l-12 6.565zM12 11 24 4H0l12 7z" />
+                </svg>
+            </a>
+
+        </div>
+        </div>
+        
     </footer>
 
 </body>
@@ -583,6 +714,13 @@
         p.style.animationDelay = Math.random() * 10 + "s";
 
         particleContainer.appendChild(p);
+    }
+    function openPopup() {
+        document.getElementById("blogPopup").classList.remove("hidden");
+    }
+
+    function closePopup() {
+        document.getElementById("blogPopup").classList.add("hidden");
     }
     //10 more skills button action , redirect to skills page
 </script>
