@@ -6,218 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimra Tanveer | Software QA Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    <link rel="stylesheet" href="index.css">
 
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        nav a {
-            cursor: none;
-        }
-
-        button {
-            cursor: none;
-        }
-
-        /* Custom Glowing Utilities */
-        .neon-glow {
-            box-shadow: 0 0 15px rgba(29, 185, 84, 0.4);
-        }
-
-        .neon-text {
-            text-shadow: 0 0 8px rgba(0, 255, 156, 0.5);
-        }
-
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        /* Smooth transition for hover */
-        .hover-lift {
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hover-lift:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(29, 185, 84, 0.2);
-        }
-
-        /* custom cursor  */
-        body {
-            cursor: none;
-        }
-
-        .cursor {
-            width: 20px;
-            height: 20px;
-            border: 2px solid #00ff9c;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            transform: translate(-50%, -50%);
-            transition: 0.1s;
-            box-shadow: 0 0 10px #00ff9c;
-            z-index: 99999;
-        }
-
-        /* header styling */
-        /* floating neon avatar */
-        .avatar-glow {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            border: 2px solid #00ff9c;
-            box-shadow: 0 0 15px #00ff9c;
-            object-fit: cover;
-            animation: floatGlow 5s ease-in-out infinite;
-            margin-left: 20px;
-        }
-
-        /* subtle floating animation */
-        /* @keyframes floatGlow {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-                box-shadow: 0 0 10px #00ff9c;
-            }
-
-            50% {
-                transform: translateY(-8px);
-                box-shadow: 0 0 25px #00ff9c;
-            }
-        } */
-
-        /* premium button styling  */
-        .premium-btn {
-            padding: 5px 18px;
-            border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #aaa;
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            transition: all 0.35s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* hover glow effect */
-        .premium-btn:hover {
-            color: #fff;
-            transform: translateY(-3px);
-            border-color: rgba(0, 255, 156, 0.4);
-            box-shadow: 0 0 20px rgba(0, 255, 156, 0.15);
-        }
-
-        /* subtle animated shine */
-        .premium-btn::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(120deg,
-                    transparent,
-                    rgba(0, 255, 156, 0.15),
-                    transparent);
-            transition: 0.5s;
-        }
-
-        .premium-btn:hover::before {
-            left: 100%;
-        }
-
-        /* special contact button */
-        .premium-btn.primary {
-            border: 1px solid #1db954;
-            color: #1db954;
-        }
-
-        .premium-btn.primary:hover {
-            background: #1db954;
-            color: black;
-            box-shadow: 0 0 25px rgba(29, 185, 84, 0.4);
-        }
-
-        /* hiding scrollbar */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        /* floating shapes */
-        .floating-shape {
-            position: absolute;
-            border-radius: 50%;
-            animation: floatMove 18s infinite ease-in-out alternate;
-        }
-
-        /* different speeds for realism */
-        .floating-shape:nth-child(1) {
-            animation-duration: 20s;
-        }
-
-        .floating-shape:nth-child(2) {
-            animation-duration: 25s;
-        }
-
-        .floating-shape:nth-child(3) {
-            animation-duration: 30s;
-        }
-
-        @keyframes floatMove {
-            0% {
-                transform: translateY(0px) translateX(0px);
-            }
-
-            50% {
-                transform: translateY(-40px) translateX(30px);
-            }
-
-            100% {
-                transform: translateY(30px) translateX(-20px);
-            }
-        }
-
-        /* particle dots */
-        #particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .particle {
-            position: absolute;
-            width: 3px;
-            height: 3px;
-            background: #1db954;
-            border-radius: 50%;
-            opacity: 0.3;
-            animation: particleFloat linear infinite;
-        }
-
-        @keyframes particleFloat {
-            from {
-                transform: translateY(100vh);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(-10vh);
-                opacity: 0.6;
-            }
-        }
-    </style>
 </head>
 
 <body class="bg-[#0a0a0a] text-white selection:bg-[#1db954] selection:text-white">
@@ -260,8 +50,9 @@
             <div class="text-left">
                 <h2 class="text-[#1db954] font-medium tracking-widest uppercase mb-4">Hello, I'm</h2>
                 <h1 class="text-6xl md:text-8xl font-bold mb-6">Nimra Tanveer</h1>
-                <p class="text-gray-400 text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Software QA Engineer. <span
-                        class="text-white">Ensuring quality, reliability, and seamless user experiences.</span></p>
+                <p class="text-gray-400 text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Full Stack & QA Eng.<br><span
+                        class="text-white">Ensuring Reliable Development, Quality and Seamless User Experiences.</span>
+                </p>
                 <a href="#projects"
                     class="inline-block px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow">
                     Projects
@@ -283,26 +74,85 @@
         <div class="premium-btn overflow-hidden glass-panel p-10 rounded-3xl">
             <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
             <p class="text-gray-300 leading-relaxed text-lg">
-                As a detail-oriented Software QA Engineer, I bridge the gap between development and end-user
-                satisfaction. My passion lies in creating robust testing frameworks, uncovering critical bugs before
-                they reach production, and ensuring that every pixel and logic flow meets the highest standards of
-                quality. I am currently focused on transitioning into automated testing environments to streamline
-                delivery pipelines.
+                As a detail-oriented <span class="text-[#1db954]">QA Engineer</span> and <span
+                    class="text-[#1db954]">Full Stack Developer</span>, I bridge the gap between development and
+                end-user satisfaction. My passion lies in creating robust testing frameworks, uncovering critical bugs
+                before they reach production, and ensuring that every pixel and logic flow meets the <span
+                    class="text-[#1db954]">highest standards of quality</span>. With hands-on experience in building
+                <span class="text-[#1db954]">web applications using Django,</span> I understand systems from both
+                development and testing perspectives. I am currently focused on transitioning into automated testing
+                environments to streamline delivery pipelines.
             </p>
         </div>
     </section>
+
+    <section id="experience" class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
+
+    <div class="relative border-l border-gray-800">
+
+        <!-- ITEM 1 -->
+        <div class="mb-12 ml-6 group">
+            <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#1db954] rounded-full ring-4 ring-black"></span>
+
+            <div class="premium-btn glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all hover:scale-[1.02]">
+                <h3 class="text-xl font-semibold text-white">QA Engineer</h3>
+                <p class="text-[#1db954] text-sm mb-2">@Devmine</p>
+                <p class="text-gray-400 text-sm mb-4">August 2025 - Present</p>
+
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Performed end-to-end manual testing on multiple web applications including SaaS platforms.
+                    Designed structured test cases, identified critical bugs, and ensured smooth user experience across systems.
+                </p>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="mb-12 ml-6 group">
+            <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#1db954] rounded-full ring-4 ring-black"></span>
+
+            <div class="premium-btn glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all hover:scale-[1.02]">
+                <h3 class="text-xl font-semibold text-white">Full Stack Development Course</h3>
+                <p class="text-[#1db954] text-sm mb-2">@HarvardX</p>
+                <p class="text-gray-400 text-sm mb-4">June 2025 - Present</p>
+
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Built dynamic web applications using Django with Python, handling both backend logic and frontend integration.
+                    Focused on HTML/CSS/JS, Responsive Design, Tailwind,  Python, SQL, Models, Migrations.
+                </p>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="mb-12 ml-6 group">
+            <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#1db954] rounded-full ring-4 ring-black"></span>
+
+            <div class="premium-btn glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all hover:scale-[1.02]">
+                <h3 class="text-xl font-semibold text-white">Virtual Assistant</h3>
+                <p class="text-[#1db954] text-sm mb-2">@Nearpeer.Org</p>
+                <p class="text-gray-400 text-sm mb-4"> 2023 - 2024</p>
+
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Handled Projects Virtually Assisting with MS Office Expertise. 
+                    Delivered detailed reports improving Projects reliability and satisfaction.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 text-center">Technical Expertise</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Manual Testing</h3>
+                <h3 class="text-[#1db954] font-semibold mb-2">Python Django</h3>
                 <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
                     <div class="bg-[#1db954] h-2 rounded-full w-[95%]"></div>
                 </div>
             </div>
             <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Test Case Design</h3>
+                <h3 class="text-[#1db954] font-semibold mb-2">Test Cases</h3>
                 <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
                     <div class="bg-[#1db954] h-2 rounded-full w-[90%]"></div>
                 </div>
@@ -314,7 +164,7 @@
                 </div>
             </div>
             <div class="premium-btn overflow-hidden glass-panel p-6 rounded-2xl hover:border-[#1db954] transition-all">
-                <h3 class="text-[#1db954] font-semibold mb-2">Automation</h3>
+                <h3 class="text-[#1db954] font-semibold mb-2">Manual Testing</h3>
                 <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
                     <div class="bg-[#1db954] h-2 rounded-full w-[70%]"></div>
                 </div>
@@ -326,11 +176,11 @@
             </div>
         </div>
         <div class="text-center mt-8">
-                <a href="#skills"
-                    class="inline-block px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow">
-                    View All Skills
-                </a>
-            </div>
+            <a href="#skills"
+                class="inline-block px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all neon-glow">
+                View All Skills
+            </a>
+        </div>
     </section>
 
     <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
@@ -344,103 +194,154 @@
                 <!-- CARD 1 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="caseflow.png" alt="CaseFlow SaaS"
+                        <img src="prynt.png" alt="Prynt"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-bold mb-2">CaseFlow SaaS</h3>
-                    <p class="text-gray-400 mb-4 text-sm">Enterprise-grade test case management system with real-time
-                        analytics.</p>
+                    <h3 class="text-xl font-bold mb-2">Prynt</h3>
+                    <p class="text-gray-400 mb-4 text-sm">A Detailed QA Analysis of a Printing Web Portal in DUBAI.</p>
 
-                    <div class="flex gap-2 mb-6">
-                        <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">React</span>
-                        <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Python</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            Manual Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            Bug Tracking
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            Test Cases
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            +4 More
+                        </span>
                     </div>
 
                     <button
-                        class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black transition-all">
+                        class="premium-btn primary w-full py-2 border  transition-all">
                         View Details
                     </button>
                 </div>
-                <!-- CARD 4 -->
-            <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
-                <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                    <span class="text-[#1db954] text-4xl">📱</span>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Devmine</h3>
-                <p class="text-gray-400 mb-4 text-sm">Business Development & Software Solutions.
-                </p>
-
-                <div class="flex gap-2 mb-6">
-                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">UI/UX</span>
-                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Figma</span>
-                </div>
-
-                <button
-                    class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black transition-all">
-                    View Details
-                </button>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
-                <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                    <span class="text-[#1db954] text-4xl">📱</span>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Devmine</h3>
-                <p class="text-gray-400 mb-4 text-sm">Business Development & Software Solutions.
-                </p>
-
-                <div class="flex gap-2 mb-6">
-                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">UI/UX</span>
-                    <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Figma</span>
-                </div>
-
-                <button
-                    class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black transition-all">
-                    View Details
-                </button>
-            </div>
-
                 <!-- CARD 2 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="caseflow.png" alt="CaseFlow SaaS"
+                        <img src="devmine.png" alt="devmine"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-bold mb-2">CaseFlow SaaS</h3>
-                    <p class="text-gray-400 mb-4 text-sm">Enterprise-grade test case management system with real-time
-                        analytics.</p>
+                    <h3 class="text-xl font-bold mb-2">Devmine</h3>
+                    <p class="text-gray-400 mb-4 text-sm">QA Analysis of a Business Development & Software Solutions.
+                    </p>
 
-                    <div class="flex gap-2 mb-6">
-                        <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">React</span>
-                        <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Python</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            UI/UX Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            Regression Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            Lead Gen. Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            +6 More
+                        </span>
                     </div>
 
                     <button
-                        class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black transition-all">
+                        class="premium-btn primary w-full py-2 border  transition-all">
                         View Details
                     </button>
                 </div>
+
+                
 
                 <!-- CARD 3 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <span class="text-[#1db954] text-4xl">📱</span>
+                        <img src="ustaad.png" alt="Ustaad"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Skillcy App</h3>
-                    <p class="text-gray-400 mb-4 text-sm">Student-focused skill development roadmap and UI/UX design.
-                    </p>
+                    <h3 class="text-xl font-bold mb-2">Ustaad</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Bringing Quality to a SaaS Platform - A Comprehensive Parent & Tutor Onboarding Solution.</p>
 
-                    <div class="flex gap-2 mb-6">
-                        <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">UI/UX</span>
-                        <span class="px-2 py-1 text-xs bg-[#0f2f1f] text-[#1db954] rounded">Figma</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            User Experience Testing
+                        </span>
+                        
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            Multi-role Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            +4 More
+                        </span>
                     </div>
 
                     <button
-                        class="w-full py-2 border border-gray-700 rounded-lg hover:bg-[#1db954] hover:text-black transition-all">
+                        class="premium-btn primary w-full py-2 border  transition-all">
                         View Details
                     </button>
                 </div>
+                <!-- CARD 4 -->
+                <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
+                    <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
+                        <img src="DM.png" alt="CaseFlow SaaS"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Digital Mandee</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Business Development & Software Solutions.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            CRM Analysis
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            Security Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            Smoke testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            +5 More
+                        </span>
+                    </div>
+
+                    <button
+                        class="premium-btn primary w-full py-2 border  transition-all">
+                        View Details
+                    </button>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
+                    <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
+                        <img src="afohs.png" alt="afohs"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">AFOHS Club</h3>
+                    <p class="text-gray-400 mb-4 text-sm">A Member Management System for a Falcon Society Club, Ensuring Seamless Operations and Enhanced User Experience.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            Bookings 
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2">
+                            Security Testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            Smoke testing
+                        </span>
+                        <span class="text-center bg-[#0f2f1f] text-[#1db954] rounded-full whitespace-nowrap text-xs p-2 ">
+                            +5 More
+                        </span>
+                    </div>
+
+                    <button
+                        class="premium-btn primary w-full py-2 border  transition-all">
+                        View Details
+                    </button>
+                </div>
+
 
             </div>
 
