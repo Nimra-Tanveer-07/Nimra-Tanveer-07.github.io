@@ -13,7 +13,12 @@
 
 <body class="bg-[#0a0a0a] text-white selection:bg-[#1db954] selection:text-white">
 
-
+    <!-- welcome -->
+    <div id="introScreen" class="w-full h-full fixed inset-0 bg-black z-[99999] flex items-center justify-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-[#1db954] opacity-0" id="introText">
+            Welcome
+        </h1>
+    </div>
     <!-- GENERIC POPUP OVERLAY -->
     <div id="popup" class="fixed inset-0 z-[9999] hidden flex items-center justify-center">
 
@@ -24,7 +29,8 @@
         <div id="popupContent"
             class="relative premium-btn overflow-hidden glass-panel p-10 rounded-3xl bg-[#161616]/60 backdrop-blur-xl border border-gray-700 max-w-md text-center shadow-2xl">
             <div>
-                <button  id="cross" onclick="closePopup()" class="absolute border border-gray-600 rounded-full px-2 py-1 top-2 right-2 text-gray-400 hover:text-white transition">
+                <button id="cross" onclick="closePopup()"
+                    class="absolute border border-gray-600 rounded-full px-2 py-1 top-2 right-2 text-gray-400 hover:text-white transition">
                     ✕
                 </button>
             </div>

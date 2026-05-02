@@ -1,3 +1,63 @@
+ 
+ /* Welcome */
+ #introText {
+    animation: introAnim 2s ease forwards;
+}
+
+@keyframes introAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scrol reveal  */
+ .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Wrong Password */
+ @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.4s;
+    border: 1px solid red !important;
+    box-shadow: 0 0 10px red;
+}
+
+/* Corret password */
+ 
+.success-glow {
+    animation: glowPulse 0.6s ease;
+}
+
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 0px #1db954; }
+    50% { box-shadow: 0 0 30px #1db954; }
+    100% { box-shadow: 0 0 0px #1db954; }
+}
+ 
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
  body {
