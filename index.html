@@ -12,6 +12,9 @@
 </head>
 
 <body class="bg-[#0a0a0a] text-white selection:bg-[#1db954] selection:text-white">
+    <div class="fixed inset-0 -z-10">
+        <img src="Assets/about.png" class="w-full h-full object-cover opacity-30 blur-sm scale-110" alt="background">
+    </div>
 
     <!-- welcome -->
     <!-- <div id="introScreen" class="w-full h-full fixed inset-0 bg-black z-[99999] flex items-center justify-center">
@@ -92,7 +95,7 @@
             <a href="#skills" class="premium-btn">Skills</a>
 
             <a href="#projects" class="premium-btn">Projects</a>
-            
+
             <a href="NimraResume.pdf" download class=" premium-btn primary">
                 Download CV
             </a>
@@ -116,17 +119,18 @@
         <a href="#projects" class="menu-item text-2xl hover:text-[#1db954] transition">Projects</a>
         <a href="#contact" class="menu-item text-2xl hover:text-[#1db954] transition">Contact</a>
         <a href="NimraResume.pdf" download class="menu-item text-2xl hover:text-[#1db954] transition">
-                Download
-            </a>
+            Download
+        </a>
 
 
     </div>
 
-    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
 
-        <div id="header" class="flex flex-col-reverse md:flex-row items-center gap-8 text-center md:text-left">
+        <div id="header"
+            class="relative z-20 flex flex-col-reverse md:flex-row items-center gap-8 text-center md:text-left">
             <div class="text-left">
-                <h2 class="text-[#1db954] font-medium tracking-widest uppercase mb-4">Hello, I'm</h2>
+                <h2 class="text-[#1db954] font-medium tracking-widest uppercase mb-4">LADIES & GENTLEMEN, PRESENTING ...</h2>
                 <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">Nimra Tanveer</h1>
                 <p class="text-gray-400 text-base sm:text-lg md:text-2xl mb-8 max-w-xl md:max-w-2xl mx-auto md:mx-0">
                     Vision : Full Stack with AI/ML Integration <br><span class="text-white">Ensuring Reliable
@@ -135,14 +139,15 @@
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
 
-                    <a href="NimraResume.pdf"
+                    <a href="Assets/NimraResume.pdf"
                         class="px-6 py-3 bg-[#1db954] text-black font-bold rounded-full hover:bg-white transition-all flex items-center gap-2">
                         Resume
 
                     </a>
                     <div class=" premium-btn px-4 py-2 bg-black text-white font-bold rounded-full transition-all  border border-green-500 flex items-center gap-2"
                         title="Download Resume">
-                        <a href="NimraResume.pdf" download >
+                        <a href="Assets/NimraResume.pdf" download>
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -153,10 +158,10 @@
 
                     </div>
                 </div>
-                
+
             </div>
             <div id="image" class="flex justify-center">
-                <img src="myImage.png"
+                <img src="Assets/myImage.png" alt="Nimra Tanveer"
                     class="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover avatar-glow" />
             </div>
         </div>
@@ -481,7 +486,7 @@
                 <!-- CARD 1 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="prynt.png" alt="Prynt"
+                        <img src="Assets/prynt.png" alt="Prynt"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
                     <h3 class="text-xl font-bold mb-2">Prynt</h3>
@@ -516,7 +521,7 @@
                 <!-- CARD 2 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="devmine.png" alt="devmine"
+                        <img src="Assets/devmine.png" alt="devmine"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
                     <h3 class="text-xl font-bold mb-2">Devmine</h3>
@@ -556,7 +561,7 @@
                 <!-- CARD 3 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="ustaad.png" alt="Ustaad"
+                        <img src="Assets/ustaad.png" alt="Ustaad"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
                     <h3 class="text-xl font-bold mb-2">Ustaad</h3>
@@ -589,7 +594,7 @@
                 <!-- CARD 4 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="DM.png" alt="CaseFlow SaaS"
+                        <img src="Assets/DM.png" alt="CaseFlow SaaS"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
                     <h3 class="text-xl font-bold mb-2">Digital Mandee</h3>
@@ -626,7 +631,7 @@
                 <!-- CARD 5 -->
                 <div class="glass-panel premium-btn p-6 rounded-3xl hover-lift min-w-[300px]">
                     <div class="h-40 bg-[#0f2f1f] rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                        <img src="afohs.png" alt="afohs"
+                        <img src="Assets/afohs.png" alt="afohs"
                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
                     <h3 class="text-xl font-bold mb-2">AFOHS Club</h3>
@@ -689,55 +694,105 @@
     <section id="contact" class="py-20 px-6 max-w-6xl mx-auto">
 
         <h2 class="text-3xl font-bold mb-12 text-center text-white">
-            Get In Touch
+            Let's Connect
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-center md:text-left">
             <!-- LEFT: Interactive Image / Icon -->
-            <div class="flex justify-center items-center relative">
+            <div class="flex justify-center items-center relative w-full">
 
-                <!-- IMAGE WRAPPER -->
-                <div class="relative max-w-sm w-full overflow-hidden rounded-xl">
+                <!-- BIG ORBIT WRAPPER -->
+                <div class="relative w-[420px] h-[420px] flex items-center justify-center">
 
-                    <!-- IMAGE -->
-                    <img src="form.png" alt="Contact Illustration" class="w-full h-full object-cover">
+                    <!-- CENTER IMAGE (bigger now) -->
+                    <img src="Assets/form.png"
+                        class="w-56 h-56 rounded-full object-cover z-10 border-2 border-[#1db954] shadow-2xl"
+                        alt="Profile">
 
-                    <!-- TOP FADE -->
-                    <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#0a0a0a] to-transparent"></div>
+                    <!-- ORBIT LAYER -->
+                    <div class="absolute inset-0 orbit-icon">
 
-                    <!-- BOTTOM FADE -->
-                    <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#0a0a0a] to-transparent">
-                    </div>
+                        <!-- GitHub -->
+                        <a href="https://github.com/Nimra-Tanveer-07" target="_blank" class="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-14 bg-black border border-gray-700 rounded-full flex items-center justify-center overflow-hidden hover:scale-110 transition-all duration-300 hover:border-[#1db954] hover:shadow-[0_0_15px_#1db95440]">
 
-                    <!-- LEFT FADE -->
-                    <div class="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-[#0a0a0a] to-transparent"></div>
+                            <img src="Assets/github.png" alt="GitHub" class="w-full h-full object-cover">
+                        </a>
 
-                    <!-- RIGHT FADE -->
-                    <div class="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-[#0a0a0a] to-transparent">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/nimra-tanveer-66194028a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-12 flex items-center justify-center bg-black border border-gray-700 rounded-full overflow-hidden hover:scale-110 transition">
+
+                            <img src="Assets/linkedin.png" alt="LinkedIn" class="w-full h-full object-cover">
+                        </a>
+
+                        <!-- whatsapp -->
+                        <a href="https://wa.me/923274355814" target="_blank"
+                            class="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-black border border-gray-700 rounded-full overflow-hidden hover:scale-110 transition">
+
+                            <img src="Assets/wsapp.png" alt="WhatsApp" class="w-full h-full object-cover">
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:example@gmail.com" class="absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-black border border-gray-700 rounded-full overflow-hidden hover:scale-110 transition">
+
+                            <img src="Assets/email.png" alt="Email" class="w-full h-full object-cover">
+                        </a>
+
                     </div>
 
                 </div>
             </div>
 
             <!-- RIGHT: Form -->
-            <div class="flex justify-center items-center">
-                <form action="https://formspree.io/f/mnjlreng" method="POST" class="space-y-4">
+            <div class="flex justify-center items-center w-full">
 
-                    <input type="text" name="name" placeholder="Name required" required
-                        class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
+                <!-- OUTER GLOW LAYER -->
+                <div class="relative w-full max-w-md">
 
-                    <input type="email" name="email" placeholder="Email" required
-                        class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all">
+                    <!-- glow behind -->
+                    <div class="absolute inset-0 bg-[#1db954]/10 blur-3xl rounded-3xl scale-110"></div>
 
-                    <textarea name="message" placeholder="Message" rows="4" required
-                        class="w-full bg-[#161616] border border-gray-800 p-4 rounded-xl focus:outline-none focus:border-[#1db954] focus:ring-1 focus:ring-[#1db954] transition-all"></textarea>
+                    <!-- FORM CARD -->
+                    <form action="https://formspree.io/f/mnjlreng" method="POST"
+                        class="relative bg-black/70 backdrop-blur-2xl border border-gray-800 p-8 rounded-3xl space-y-5 shadow-2xl">
 
-                    <button class="premium-btn primary w-full py-2 border transition-all">
-                        Send Message
-                    </button>
+                        <!-- TOP DECOR BAR -->
+                        <div class="w-12 h-1 bg-[#1db954] rounded-full mb-4"></div>
 
-                </form>
+                        <h3 class="text-2xl font-bold text-white">
+                            Drop a Message
+                        </h3>
 
+                        <!-- INPUTS -->
+                        <div class="space-y-4 mt-6">
+
+                            <input type="text" name="name" placeholder="Your Name" required class="w-full bg-black/40 border border-gray-800 p-4 rounded-xl 
+                    text-white placeholder-gray-600
+                    focus:outline-none focus:border-[#1db954] focus:ring-2 focus:ring-[#1db954]/30
+                    transition-all">
+
+                            <input type="email" name="email" placeholder="Your Email" required class="w-full bg-black/40 border border-gray-800 p-4 rounded-xl 
+                    text-white placeholder-gray-600
+                    focus:outline-none focus:border-[#1db954] focus:ring-2 focus:ring-[#1db954]/30
+                    transition-all">
+
+                            <textarea name="message" placeholder="Your Message" rows="5" required class="w-full bg-black/40 border border-gray-800 p-4 rounded-xl 
+                    text-white placeholder-gray-600 resize-none
+                    focus:outline-none focus:border-[#1db954] focus:ring-2 focus:ring-[#1db954]/30
+                    transition-all"></textarea>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button class="w-full mt-6 py-3 bg-gradient-to-r from-[#1db954] to-[#16a34a] 
+                text-black font-bold rounded-xl 
+                hover:scale-[1.03] hover:shadow-[0_0_25px_#1db95440]
+                transition-all duration-300">
+                            Send Message →
+                        </button>
+
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -746,43 +801,12 @@
     </section>
 
     <footer class="py-10 text-center text-gray-500 text-sm border-t border-gray-900">
-        <div class="flex flex-row justify-center items-center gap-4 mb-4">
+        
             <div>
                 © 2026 Nimra Tanveer. Built with precision.
             </div>
-            <!-- ICON LINKS -->
-            <div class="flex justify-center items-center gap-6 mb-4">
-
-                <!-- GitHub -->
-                <a href="https://github.com/Nimra-Tanveer-07" target="_blank" class="hover:text-[#1db954] transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M12 .5C5.7.5.8 5.4.8 11.8c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.1 2.8 2.1 1.4 0 2.3-1.1 2.6-1.6.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.7 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0C18.1 4.5 19.1 4.8 19.1 4.8c.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.4-2.8 5.4-5.4 5.7.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.2 5.4 18.3.5 12 .5z" />
-                    </svg>
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/nimra-tanveer-66194028a/" target="_blank"
-                    class="hover:text-[#1db954] transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.33V9h3.42v1.56h.05c.48-.9 1.65-1.86 3.4-1.86 3.63 0 4.3 2.39 4.3 5.5v6.25zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
-                    </svg>
-                </a>
-
-                <!-- Email -->
-                <a href="mailto:artistically07@gmail.com" class="hover:text-[#1db954] transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M12 13.065 0 6.5V18a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6.5l-12 6.565zM12 11 24 4H0l12 7z" />
-                    </svg>
-                </a>
-
-            </div>
-        </div>
+            
+        
 
     </footer>
 

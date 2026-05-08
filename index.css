@@ -3,6 +3,9 @@
  #introText {
     animation: introAnim 2s ease forwards;
 }
+* {
+    transition: all 0.3s ease-in-out;
+}
 
 @keyframes introAnim {
     0% {
@@ -19,8 +22,7 @@
     }
 }
 
-/* Scrol reveal  */
- .reveal {
+.reveal {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease;
@@ -29,6 +31,26 @@
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.orbit-icon {
+  animation: floaty 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+    animation: spinSlow 18s linear infinite;
 }
 
 /* Wrong Password */
